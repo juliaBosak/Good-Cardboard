@@ -1,0 +1,66 @@
+.main
+	padding-top: 12%
+	padding-bottom: 7%
+	color: $color-ff
+	position: relative
+	background: $color-37 url(../img/main/main-bg.jpg) center no-repeat
+	background-size: cover
+	display: flex
+	justify-content: spase-around
+.main-content
+	display: flex
+	justify-content: center
+	align-items: center
+	&__text
+		z-index: 1
+		flex-basis: 55%
+		&-title
+			font-size: 2.5rem
+			font-weight: 700
+			line-height: 42px
+			margin-bottom: 15px
+		&-subtitle
+			font-size: 1.7rem
+			font-weight: 400
+		&-form 
+			margin-top: 24px
+			padding: 30px 27px
+			display: inline-block
+			background-color: rgba(#fff, 0.2)
+			&-descr
+				font-size: 1.25rem
+				font-weight: 300
+				line-height: 30px
+			&-descr2
+				line-height: 30px
+				margin-bottom: 15px
+				font-weight: 500
+				text-transform: uppercase
+				font-size: 1.25rem
+			&-small
+				margin-top: 9px
+				font-size: 0.875rem
+				font-weight: 300
+				line-height: 30px
+	&__img
+		z-index: 1
+		position: relative
+		flex-basis: 40%
+		display: inline-block
+		left: -10%
+		& img 
+			width: 110%
+		&::before
+			z-index: -1
+			content: ''
+			position: absolute
+			display: block
+			right: -51px
+			bottom: -15px
+			width: 350px	
+			height: 350px
+			border: 1px solid #ffffff
+			border-radius: 50%
+			opacity: 0.4
+
+	
